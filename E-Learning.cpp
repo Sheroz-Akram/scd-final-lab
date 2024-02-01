@@ -8,8 +8,10 @@ private:
 	Teacher * teacherList;
 public:
 	E-Learning();
-	public void enrollStudent(Student newStudent);
-	public void addTeacher(Teacher newTeacher);
-	public void assignTeacher(int studentID, int teacherID);
-	public void login(string email, string password);
+	void enrollStudent(Student newStudent);
+	void addTeacher(Teacher newTeacher){
+		teacherList.add(newTeacher);
+	}
+	void assignTeacher(int studentID, int teacherID);
+	void login(string email, string password);
 };
