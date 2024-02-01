@@ -14,10 +14,16 @@ public:
 	void login(string email, string password);
 };
 
+<<<<<<< HEAD
 void enrollStudent(Student newStudent){
 	studentList.add(newStudent);
 }
 
 void addTeacher(Teacher newTeacher){
 	teacherList.add(newTeacher);
+=======
+void assignTeacher(int studentID, int teacherID){
+	Student student = studentList.findStudent(studentID);
+	student.assign(teacherID);
+>>>>>>> feature/assignTeacher
 }
