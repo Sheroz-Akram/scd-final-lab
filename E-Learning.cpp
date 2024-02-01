@@ -17,3 +17,7 @@ public:
 void enrollStudent(Student newStudent){
 	studentList.add(newStudent);
 }
+
+void addTeacher(Teacher newTeacher){
+	teacherList.add(newTeacher);
+}
